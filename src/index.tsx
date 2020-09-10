@@ -1,10 +1,14 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import HeaderComponent from './components/header-component/header-component.component'
+import BodyComponent from './components/body-component/body-component.component'
+import FooterComponent from './components/footer-component/footer-component.component'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ExampleComponent = () => {
+  return (
+    <div>
+      <HeaderComponent></HeaderComponent>
+      <BodyComponent></BodyComponent>
+      <FooterComponent></FooterComponent>
+    </div>
+  )
 }
