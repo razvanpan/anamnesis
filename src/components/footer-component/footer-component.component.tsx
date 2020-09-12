@@ -4,7 +4,7 @@ import Hyperlink from 'terra-hyperlink'
 import Spacer from 'terra-spacer'
 import ActionFooter from 'terra-action-footer'
 
-const FooterComponent = () => (
+const AnamnesisFooter = () => (
   <ActionFooter
     start={<Hyperlink href='#'>Back</Hyperlink>}
     end={
@@ -18,4 +18,4 @@ const FooterComponent = () => (
   />
 )
 
-export default FooterComponent
+export default AnamnesisFooter

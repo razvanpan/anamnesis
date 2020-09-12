@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { ExampleComponent } from 'anamnesis'
+import { Anamnesis } from 'anamnesis'
 import 'anamnesis/dist/index.css'
 
 const App = () => {
   return (
     <div>
-      <ExampleComponent></ExampleComponent>
+      <Anamnesis></Anamnesis>
     </div>
   )
 }

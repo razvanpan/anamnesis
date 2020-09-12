@@ -1,14 +1,14 @@
 import * as React from 'react'
-import HeaderComponent from './components/header-component/header-component.component'
-import BodyComponent from './components/body-component/body-component.component'
-import FooterComponent from './components/footer-component/footer-component.component'
+import AnamnesisHeader from './components/header-component/header-component.component'
+import AnamnesisBody from './components/body-component/body-component.component'
+import AnamnesisFooter from './components/footer-component/footer-component.component'
 
-export const ExampleComponent = () => {
+export const Anamnesis = () => {
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      <BodyComponent></BodyComponent>
-      <FooterComponent></FooterComponent>
+      <AnamnesisHeader></AnamnesisHeader>
+      <AnamnesisBody></AnamnesisBody>
+      <AnamnesisFooter></AnamnesisFooter>
     </div>
   )
 }
