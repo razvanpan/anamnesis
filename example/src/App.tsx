@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { ExampleComponent } from 'anamnesis'
+import { Anamnesis } from 'anamnesis'
 import 'anamnesis/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text='Hello world 😄' />
+  return (
+    <div>
+      <Anamnesis></Anamnesis>
+    </div>
+  )
 }
 
 export default App
