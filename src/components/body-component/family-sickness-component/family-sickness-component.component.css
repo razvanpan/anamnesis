@@ -1,0 +1,17 @@
+.FamilySicknessContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.FamilySicknessItem {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.FamilySicknessInput {
+  height: 20px;
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 30px;
+  padding: 0%;
+}

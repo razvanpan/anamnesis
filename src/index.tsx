@@ -7,9 +7,15 @@ import AnamnesisFooter from './components/footer-component/footer-component.comp
 export const Anamnesis = () => {
   return (
     <div className={styles.anamnesisContainer}>
-      <AnamnesisHeader></AnamnesisHeader>
-      <AnamnesisBody></AnamnesisBody>
-      <AnamnesisFooter></AnamnesisFooter>
+      <div className={styles.anamnesisHeader}>
+        <AnamnesisHeader></AnamnesisHeader>
+      </div>
+      <div className={styles.anamnesisBody}>
+        <AnamnesisBody></AnamnesisBody>
+      </div>
+      <div className={styles.anamnesisFooter}>
+        <AnamnesisFooter></AnamnesisFooter>
+      </div>
     </div>
   )
 }

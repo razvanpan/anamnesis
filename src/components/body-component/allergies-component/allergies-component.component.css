@@ -1,0 +1,11 @@
+.AllergiesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.AllergiesTextarea {
+  width: 95%;
+  height: 80px;
+  margin-left: 10px;
+}

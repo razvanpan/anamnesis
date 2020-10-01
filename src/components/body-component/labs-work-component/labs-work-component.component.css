@@ -1,0 +1,13 @@
+.LabsWorkContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.LabsWorkInput {
+  width: 40%;
+  height: 20px;
+  margin-left: 10px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}

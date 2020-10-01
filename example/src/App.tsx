@@ -5,7 +5,7 @@ import 'anamnesis/dist/index.css'
 
 const App = () => {
   return (
-    <div>
+    <div style={{height:"100%",width:"100%"}}>
       <Anamnesis></Anamnesis>
     </div>
   )

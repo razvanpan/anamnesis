@@ -1,0 +1,37 @@
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #e5eef9;
+  border-radius: 25px 25px 0px 0px;
+  border-bottom: 2px solid #c8def5;
+}
+
+.headerIcon {
+  display: flex;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.headerTitle {
+  width: 90%;
+  display: flex;
+}
+
+.headerTitle > div {
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  background-color: #e5eef9;
+}
+/* Resize title and add bold style */
+.headerTitle > div > div > div > h1 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.headerButton {
+  width: 5%;
+  display: flex;
+}
