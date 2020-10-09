@@ -3,28 +3,16 @@ import Textarea from 'terra-form-textarea'
 import ItemDisplay from 'terra-clinical-item-display'
 import styles from './medicines-component.component.css'
 
-class MedicinesComponent extends React.Component<
-  { onInput: (medicinesInput: string) => void },
-  { medicines: string }
-> {
+class MedicinesComponent extends React.Component<{
+  onInput: (medicinesInput: string) => void
+}> {
   constructor(props) {
     super(props)
     this.onChangeInput = this.onChangeInput.bind(this)
-    this.onSubmitInput = this.onSubmitInput.bind(this)
-    this.state = {
-      medicines: ''
-    }
   }
 
   onChangeInput(event) {
-    this.setState({
-      medicines: event.target.value
-    })
-  }
-
-  onSubmitInput(event) {
-    event.preventDefault()
-    this.props.onInput(this.state.medicines)
+    this.props.onInput(event.target.value)
   }
 
   render() {
@@ -41,7 +29,6 @@ class MedicinesComponent extends React.Component<
           disableResize
           className={styles.MedicinesTextarea}
           onChange={this.onChangeInput}
-          onInput={this.onSubmitInput}
         />
       </div>
     )

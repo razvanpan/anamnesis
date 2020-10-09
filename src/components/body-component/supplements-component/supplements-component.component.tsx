@@ -3,28 +3,16 @@ import Textarea from 'terra-form-textarea'
 import ItemDisplay from 'terra-clinical-item-display'
 import styles from './supplements-component.component.css'
 
-class SupplementsComponent extends React.Component<
-  { onInput: (name: string) => void },
-  { supplements: string }
-> {
+class SupplementsComponent extends React.Component<{
+  onInput: (supplementsInput: string) => void
+}> {
   constructor(props) {
     super(props)
     this.onChangeInput = this.onChangeInput.bind(this)
-    this.onSubmitInput = this.onSubmitInput.bind(this)
-    this.state = {
-      supplements: ''
-    }
   }
 
   onChangeInput(event) {
-    this.setState({
-      supplements: event.target.value
-    })
-  }
-
-  onSubmitInput(event) {
-    event.preventDefault()
-    this.props.onInput(this.state.supplements)
+    this.props.onInput(event.target.value)
   }
 
   render() {
@@ -40,7 +28,6 @@ class SupplementsComponent extends React.Component<
           disableResize
           className={styles.SupplementsTextarea}
           onChange={this.onChangeInput}
-          onInput={this.onSubmitInput}
         />
       </div>
     )
