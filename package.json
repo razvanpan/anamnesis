@@ -61,6 +61,7 @@
     "dist"
   ],
   "dependencies": {
+    "axios": "^0.20.0",
     "node-sass": "^4.14.1",
     "react-intl": "^5.8.2",
     "terra-action-footer": "^2.52.0",

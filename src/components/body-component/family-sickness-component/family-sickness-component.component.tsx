@@ -7,12 +7,15 @@ import styles from './family-sickness-component.component.css'
 interface IProps {
   name: string
   id: string
+  selectedOption: string
+  inputName: string
 }
 
 class FamilySicknessComponent extends React.Component<IProps> {
   constructor(props: any) {
     super(props)
   }
+
   render() {
     return (
       <div className={styles.FamilySicknessContainer}>
@@ -23,18 +26,21 @@ class FamilySicknessComponent extends React.Component<IProps> {
         <Radio
           id={`${this.props.id}`}
           labelText='Yes'
-          name={`${this.props.name}` + '-yes'}
+          name={`${this.props.name}`}
+          checked={`${this.props.selectedOption}` === 'Yes'}
           isInline
         />
         <Radio
           id={`${this.props.id}`}
           labelText='No'
-          name={`${this.props.name}` + '-no'}
+          name={`${this.props.name}`}
+          checked={`${this.props.selectedOption}` === 'No'}
           isInline
         />
         <Input
-          name={`${this.props.name}` + '-input'}
+          name={`${this.props.name}`}
           id={`${this.props.id}`}
+          value={`${this.props.inputName}`}
           ariaLabel='Blank'
           className={styles.FamilySicknessInput}
         />
