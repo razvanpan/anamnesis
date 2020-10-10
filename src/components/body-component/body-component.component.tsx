@@ -7,20 +7,9 @@ import FamilyMedicalHistoryComponent from './family-medical-history-component/fa
 import AllergiesComponent from './allergies-component/allergies-component.component'
 import styles from './body-component.component.css'
 
-interface AnamnesisState {
-  lastLabsWork: string
-  presentSymptoms: string
-  medicines: string
-  supplements: string
-  allergies: string
-}
-
-class AnamnesisBody extends React.Component<
-  {
-    onChangeInput: (name: string, value: string) => void
-  },
-  AnamnesisState
-> {
+class AnamnesisBody extends React.Component<{
+  onChangeInput: (name: string, value: string) => void
+}> {
   constructor(props) {
     super(props)
     this.getLastLabsWork = this.getLastLabsWork.bind(this)
@@ -28,33 +17,21 @@ class AnamnesisBody extends React.Component<
     this.getMedicines = this.getMedicines.bind(this)
     this.getSupplements = this.getSupplements.bind(this)
     this.getAllergies = this.getAllergies.bind(this)
-    this.state = {
-      lastLabsWork: '',
-      presentSymptoms: '',
-      medicines: '',
-      supplements: '',
-      allergies: ''
-    }
   }
   getLastLabsWork(lastLabsWorkInput: string) {
-    this.setState({ lastLabsWork: lastLabsWorkInput })
-    this.props.onChangeInput('lastLabsWork', this.state.lastLabsWork)
+    this.props.onChangeInput('lastLabsWork', lastLabsWorkInput)
   }
   getPresentSymptoms(presentSymptomsInput: string) {
-    this.setState({ presentSymptoms: presentSymptomsInput })
-    this.props.onChangeInput('presentSymptoms', this.state.presentSymptoms)
+    this.props.onChangeInput('presentSymptoms', presentSymptomsInput)
   }
   getMedicines(medicinesInput: string) {
-    this.setState({ medicines: medicinesInput })
-    this.props.onChangeInput('medicines', this.state.medicines)
+    this.props.onChangeInput('medicines', medicinesInput)
   }
   getSupplements(supplementsInput: string) {
-    this.setState({ supplements: supplementsInput })
-    this.props.onChangeInput('supplements', this.state.supplements)
+    this.props.onChangeInput('supplements', supplementsInput)
   }
   getAllergies(allergiesInput: string) {
-    this.setState({ allergies: allergiesInput })
-    this.props.onChangeInput('allergies', this.state.allergies)
+    this.props.onChangeInput('allergies', allergiesInput)
   }
 
   render() {
