@@ -16,6 +16,7 @@ class AnamnesisBody extends React.Component<{
     this.getPresentSymptoms = this.getPresentSymptoms.bind(this)
     this.getMedicines = this.getMedicines.bind(this)
     this.getSupplements = this.getSupplements.bind(this)
+    this.getFamilyMedicalHistory = this.getFamilyMedicalHistory.bind(this)
     this.getAllergies = this.getAllergies.bind(this)
   }
   getLastLabsWork(lastLabsWorkInput: string) {
@@ -29,6 +30,10 @@ class AnamnesisBody extends React.Component<{
   }
   getSupplements(supplementsInput: string) {
     this.props.onChangeInput('supplements', supplementsInput)
+  }
+  getFamilyMedicalHistory(familyMedicalHistory: string, details: string) {
+    let familyMedicalHistoryInput = familyMedicalHistory.concat(',',details)
+    this.props.onChangeInput('familyMedicalHistory', familyMedicalHistoryInput)
   }
   getAllergies(allergiesInput: string) {
     this.props.onChangeInput('allergies', allergiesInput)
@@ -48,7 +53,7 @@ class AnamnesisBody extends React.Component<{
           ></SupplementsComponent>
         </div>
         <div className={styles.bodyColumns}>
-          <FamilyMedicalHistoryComponent></FamilyMedicalHistoryComponent>
+          <FamilyMedicalHistoryComponent onInput={this.getFamilyMedicalHistory}></FamilyMedicalHistoryComponent>
           <AllergiesComponent onInput={this.getAllergies}></AllergiesComponent>
         </div>
       </div>

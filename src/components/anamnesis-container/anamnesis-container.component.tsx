@@ -10,6 +10,7 @@ interface Iprops {
   presentSymptoms: string
   medicines: string
   supplements: string
+  familyMedicalHistory: string
   allergies: string
 }
 export default class AnamnesisContainer extends React.Component<{}, Iprops> {
@@ -22,6 +23,7 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
       presentSymptoms: '',
       medicines: '',
       supplements: '',
+      familyMedicalHistory:'',
       allergies: ''
     }
   }
@@ -36,6 +38,9 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
   }
   onChangeSupplements(supplementsInput) {
     this.setState({ supplements: supplementsInput })
+  }
+  onChangeFamilyMedicalHistory(familyMedicalHistoryInput) {
+    this.setState({ familyMedicalHistory: familyMedicalHistoryInput })
   }
   onChangeAllergies(allergiesInput) {
     this.setState({ allergies: allergiesInput })
@@ -54,6 +59,9 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
       case 'supplements':
         this.onChangeSupplements(value)
         break
+      case 'familyMedicalHistory':
+        this.onChangeFamilyMedicalHistory(value)
+        break
       case 'allergies':
         this.onChangeAllergies(value)
         break
@@ -70,8 +78,10 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
       presentSymptoms: this.state.presentSymptoms,
       medicines: this.state.medicines,
       supplements: this.state.supplements,
+      familyMedicalHistory:this.state.familyMedicalHistory,
       allergies: this.state.allergies
     }
+    alert(anamnesisData)
     axios
       .post('http://localhost:8080/anamnesis/add', anamnesisData, {
         headers: {

@@ -73,8 +73,9 @@
     "terra-clinical-label-value-view": "^3.22.0",
     "terra-date-input": "^1.18.0",
     "terra-date-picker": "^4.47.0",
+    "terra-form-checkbox": "^4.9.0",
     "terra-form-radio": "^4.15.0",
-    "terra-form-select": "^6.16.0",
+    "terra-form-select": "^6.17.0",
     "terra-form-textarea": "^5.3.0",
     "terra-icon": "^3.36.0"
   }

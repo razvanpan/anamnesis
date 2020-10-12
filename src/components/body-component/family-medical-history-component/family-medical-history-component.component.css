@@ -3,3 +3,20 @@
   flex-direction: column;
   width: 100%;
 }
+
+.sicknessContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.columnsContainer {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.FamilyMedicalHistoryTextarea {
+  width: 95%;
+  height: 103px;
+  margin-left: 10px;
+}
