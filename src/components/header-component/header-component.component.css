@@ -1,5 +1,6 @@
 .headerContainer {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   background-color: #e5eef9;
@@ -8,15 +9,13 @@
 }
 
 .headerIcon {
-  display: flex;
   font-size: 30px;
   margin-left: 30px;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .headerTitle {
   width: 90%;
-  display: flex;
 }
 
 .headerTitle > div {
@@ -33,5 +32,5 @@
 
 .headerButton {
   width: 5%;
-  display: flex;
+  margin-right: 10px;
 }

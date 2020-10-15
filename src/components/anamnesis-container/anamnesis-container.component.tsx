@@ -81,7 +81,6 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
       familyMedicalHistory:this.state.familyMedicalHistory,
       allergies: this.state.allergies
     }
-    alert(anamnesisData)
     axios
       .post('http://localhost:8080/anamnesis/add', anamnesisData, {
         headers: {

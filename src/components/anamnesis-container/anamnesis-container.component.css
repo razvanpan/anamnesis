@@ -1,25 +1,22 @@
 .anamnesisContainer {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .anamnesisHeader {
-  position: absolute;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  height: auto;
 }
 .anamnesisBody {
-  position: fixed;
-  top: 58px;
-  left: 0;
-  right: 0;
-  overflow: auto;
-  bottom: 67px;
+  height: auto;
+  flex: 1;
+  overflow-y: scroll;
 }
 .anamnesisFooter {
-  position: fixed;
-  left: 0;
+  position: sticky;
   bottom: 0;
-  right: 0;
+  height: auto;
 }
