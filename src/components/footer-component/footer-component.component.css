@@ -1,14 +1,14 @@
 .footerContainer {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .footerContainer > div {
   background-color: #e5eef9;
   border-top: 2px solid #c8def5;
   border-radius: 0px 0px 25px 25px;
-  width: 98%;
+  width: auto;
 }
-/* Move buttons 25px to left */
+
 .buttons {
   margin-right: 25px;
 }

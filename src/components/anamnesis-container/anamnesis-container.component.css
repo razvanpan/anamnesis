@@ -8,15 +8,17 @@
 .anamnesisHeader {
   position: sticky;
   top: 0;
+  left: 0;
   height: auto;
 }
 .anamnesisBody {
   height: auto;
   flex: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .anamnesisFooter {
   position: sticky;
   bottom: 0;
+  left: 0;
   height: auto;
 }
