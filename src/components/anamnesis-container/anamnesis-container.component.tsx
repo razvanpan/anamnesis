@@ -97,15 +97,9 @@ export default class AnamnesisContainer extends React.Component<{}, Iprops> {
   render() {
     return (
       <div className={styles.anamnesisContainer}>
-        <div className={styles.anamnesisHeader}>
           <AnamnesisHeader></AnamnesisHeader>
-        </div>
-        <div className={styles.anamnesisBody}>
           <AnamnesisBody onChangeInput={this.onIndex}></AnamnesisBody>
-        </div>
-        <div className={styles.anamnesisFooter}>
           <AnamnesisFooter onSubmit={this.onSubmit}></AnamnesisFooter>
-        </div>
       </div>
     )
   }
