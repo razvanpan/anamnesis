@@ -9,13 +9,13 @@
 }
 
 .headerIcon {
-  font-size: 30px;
-  margin-left: 30px;
-  margin-top: 7px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 .headerTitle {
-  width: 90%;
+  width: 93%;
 }
 
 .headerTitle > div {
@@ -24,13 +24,8 @@
   border: 0;
   background-color: #e5eef9;
 }
-/* Resize title and add bold style */
+
 .headerTitle > div > div > div > h1 {
   font-size: 21px;
   font-weight: bold;
-}
-
-.headerButton {
-  width: 5%;
-  margin-right: 10px;
 }
