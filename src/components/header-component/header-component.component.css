@@ -1,5 +1,6 @@
 .headerContainer {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   background-color: #e5eef9;
@@ -8,15 +9,13 @@
 }
 
 .headerIcon {
-  display: flex;
-  font-size: 30px;
-  margin-left: 30px;
+  font-size: 20px;
+  margin-left: 20px;
   margin-top: 15px;
 }
 
 .headerTitle {
-  width: 90%;
-  display: flex;
+  width: 93%;
 }
 
 .headerTitle > div {
@@ -25,13 +24,8 @@
   border: 0;
   background-color: #e5eef9;
 }
-/* Resize title and add bold style */
+
 .headerTitle > div > div > div > h1 {
   font-size: 21px;
   font-weight: bold;
-}
-
-.headerButton {
-  width: 5%;
-  display: flex;
 }

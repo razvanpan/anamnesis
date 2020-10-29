@@ -12,7 +12,7 @@ const AnamnesisHeader = () => (
     <div className={styles.headerTitle}>
       <ActionHeader title=' Anamnesis' />
     </div>
-    <div className={styles.headerButton}>
+    <div>
       <ButtonIcon></ButtonIcon>
     </div>
   </div>
